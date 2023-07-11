@@ -17,7 +17,7 @@ app.use("/api/v1", routes);
 
 
 const server = http.createServer(app);
-mongoose.connect(process.env.MONGODB_URL, {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
